@@ -1,16 +1,16 @@
 {
-  "name": "christmasTree",
+  "name": "christmas_tree",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass scss/ -o css/",
-    "index": "pug --pretty index.pug",
+    "scss": "node-sass scss/main.scss -o css/",
+    "index": "pug --pretty pug/index.pug -o ./",
     "music": "pug --pretty music.pug",
     "photo": "pug --pretty photo.pug",
     "video": "pug --pretty video.pug",
     "group": "pug --pretty group.pug",
-    "build": "node-sass scss/ -o css/ & pug --pretty index.pug"
+    "build": "node-sass scss/main.scss -o css/ & pug --pretty pug/index.pug -o ./"
   },
   "author": "GreenCasser",
   "license": "MIT",
