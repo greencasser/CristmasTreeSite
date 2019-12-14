@@ -1,1 +1,75 @@
-@import "btn"
+@import "btn";
+@import "fonts";
+//general stiles
+body {
+    font-size: 62.5%;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+//first-screen
+.guest-page {
+    background: #000 url('../img/1.jpg')  center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    .wrapper {
+        position: relative;
+    }
+};
+.logo {
+    font-family: 'Conv_Lobster-Regular';
+    color: #fff;
+    font-size: 5em;
+}
+.spruce {
+    position: relative;
+    width: 0; 
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #fff;
+    margin-top: 70px;
+    &:after {
+        content: '';
+        display: block;
+        width: 0; 
+        height: 0;
+        position: absolute;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 45px solid #fff;
+        right: -25px;
+        top: -25px;
+    }
+}   
+.phone {
+    font-family: 'Conv_MarckScript-Regular';
+    font-size: 3em;
+    color: #fff;
+    position: relative;
+    margin-top: 70px;
+    &:before {
+        content: '';
+        display: block;
+        background-image: url('../img/phone.png');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: -40px;
+    }
+}
+.main-btn {
+    position: absolute;
+    font-size: 3em;
+    right: 10%;
+    top: 400%;
+    border: none;
+}

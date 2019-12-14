@@ -6,10 +6,6 @@
   "scripts": {
     "scss": "node-sass scss/main.scss -o css/",
     "index": "pug --pretty pug/index.pug -o ./",
-    "music": "pug --pretty music.pug",
-    "photo": "pug --pretty photo.pug",
-    "video": "pug --pretty video.pug",
-    "group": "pug --pretty group.pug",
     "build": "node-sass scss/main.scss -o css/ & pug --pretty pug/index.pug -o ./"
   },
   "author": "GreenCasser",
